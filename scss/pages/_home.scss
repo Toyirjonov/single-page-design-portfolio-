@@ -1,0 +1,205 @@
+/* Hero Section */
+.hero {
+  padding-top: 66px;
+}
+
+.hero__container {
+  display: flex;
+  padding-left: 1px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+
+.hero__title {
+  color: #030303;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero__description {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 80px;
+  text-align: center;
+  width: 730px;
+  height: 56px;
+}
+
+// Skills Section
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 136px;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: 343px 159px 159px 343px;
+  grid-template-rows: auto auto;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* Общие стили карточек */
+.skills__card {
+  position: relative;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.skills__card img {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.skills__title {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.89rem;
+  color: #ffffff;
+}
+
+/* Индивидуальные стили и позиционирование */
+.skills__card--graphic {
+  grid-column: 1 / 2;
+  grid-row: 1 / span 2;
+  width: 354px;
+  height: 364px;
+  background: #755cde;
+}
+
+.skills__card--uiux {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  width: 164px;
+  height: 182px;
+  background: #f6a560;
+}
+
+.skills__card--apps {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  width: 164px;
+  height: 182px;
+  background: #f39e9e;
+}
+
+.skills__card--photography {
+  grid-column: 4 / 5;
+  grid-row: 1;
+  width: 354px;
+  height: 182px;
+  background: #61c4b7;
+}
+
+.skills__card--illustrations {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  width: 354px;
+  height: 158px;
+  background: #eb7565;
+}
+
+.skills__card--motion {
+  grid-column: 4;
+  grid-row: 2;
+  width: 354px;
+  height: 158px;
+  background: #552049;
+}
+
+// Consultation Section
+.sonsultant {
+  margin-bottom: 88px;
+}
+
+.consultant-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 125px;
+}
+
+.consultant__information {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.consultant__title {
+  color: #030303;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+// Works Section
+.work {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8.8rem;
+}
+
+.work__title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #030303;
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+
+.work__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5.6rem;
+  gap: 3rem;
+
+  & img {
+    border-radius: 8px;
+  }
+}
+
+.work-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #030303;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+
+    &:hover {
+      background-color: #755cde;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.btn {
+  width: 228px;
+  height: 56px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  border: none;
+  border-radius: 28px;
+}
+
+.header__btn,
+.footer__btn {
+  background: #030303;
+  color: #fff7f0;
+
+  &:hover {
+    background: #755cde;
+    cursor: pointer;
+  }
+}
+.consultant-btn,
+.footer__container__btn {
+  color: #fff7f0;
+  background-color: #eb7565;
+
+  &:hover {
+    background-color: #f6a560;
+    cursor: pointer;
+  }
+}
